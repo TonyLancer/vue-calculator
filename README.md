@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/TonyLancer/vue-calculator.svg?branch=master)](https://travis-ci.org/TonyLancer/vue-calculator)
+
 # vue-calculator
 
 ## Project setup
