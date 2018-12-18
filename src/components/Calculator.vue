@@ -84,7 +84,7 @@ export default {
       this.setPrevious();
     },
     equal() {
-      this.current = (this.operator(parseFloat(this.current), parseFloat(this.previous))).toString();
+      this.current = (this.operator(parseFloat(this.previous), parseFloat(this.current))).toString();
       this.previous = null;
     }
   }
@@ -94,12 +94,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .calculator {
+  cursor: default;
   margin: 0 auto;
   width: 500px;
   font-size: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(50px, auto);
+}
+
+.calculator > div:active {
+  filter: brightness(0.75);
 }
 
 .display {
@@ -115,6 +120,7 @@ export default {
 .button {
   background-color: #d6d6d6;
   border: 1px solid #999;
+  padding: 1vmin;
 }
 
 .operator {
