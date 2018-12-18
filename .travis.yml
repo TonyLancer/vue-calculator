@@ -11,4 +11,12 @@ before_script:
 
 script:
   - npm run build
-  - bash scripts/deploy.sh
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+  local_dir: dist

@@ -1,15 +1,5 @@
 {
     "name": "vue-calculator",
-    "type": "static",
-    "static": {
-      "public": "dist",
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    },
     "alias": "vue-calculator",
     "files": [
       "dist"
