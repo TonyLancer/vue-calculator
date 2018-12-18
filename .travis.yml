@@ -10,4 +10,13 @@ before_script:
   - npm install -g @vue/cli
 
 script:
-  - bash scripts/deploy.sh
+  - npm run build
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+  local_dir: dist
