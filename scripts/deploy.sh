@@ -21,6 +21,7 @@ git commit -m 'deploying website'
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
-git push -f git@github.com:TonyLancer/vue-calculator.git master:gh-pages
+# git push -f git@github.com:TonyLancer/vue-calculator.git master:gh-pages
+git push -f https://github.com/TonyLancer/vue-calculator.git master:gh-pages
 
 cd -
